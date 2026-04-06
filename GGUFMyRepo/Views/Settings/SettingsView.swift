@@ -2,7 +2,7 @@ import SwiftUI
 import Metal
 
 struct SettingsView: View {
-    let appState: AppState
+    @Bindable var appState: AppState
     @State private var token = ""
     @State private var settingsStore = AppSettingsStore()
 
