@@ -7,95 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000000000000000000000001 /* GGUFMyRepoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000101; };
-		000000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000102; };
-		000000000000000000000003 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000103; };
-		000000000000000000000004 /* GlassProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000104; };
-		000000000000000000000005 /* StorageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000105; };
-		000000000000000000000006 /* TerminalLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000106; };
-		000000000000000000000007 /* ThermalStateBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000107; };
-		000000000000000000000008 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108; };
-		000000000000000000000009 /* DeviceProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000109; };
-		00000000000000000000000A /* GGUFMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010A; };
-		00000000000000000000000B /* HFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010B; };
-		00000000000000000000000C /* QuantJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010C; };
-		00000000000000000000000D /* QuantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D; };
-		00000000000000000000000E /* AppSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010E; };
-		00000000000000000000000F /* BinaryQuantizeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010F; };
-		000000000000000000000010 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000110; };
-		000000000000000000000011 /* DeviceMemoryBridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000111; };
-		000000000000000000000012 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000112; };
-		000000000000000000000013 /* GGUFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000113; };
-		000000000000000000000014 /* HFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000114; };
-		000000000000000000000015 /* JobHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000115; };
-		000000000000000000000016 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000116; };
-		000000000000000000000017 /* QuantRecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000117; };
-		000000000000000000000018 /* QuantizeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000118; };
-		000000000000000000000019 /* ThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000119; };
-		00000000000000000000001A /* WidgetSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011A; };
-		00000000000000000000001B /* JobHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011B; };
-		00000000000000000000001C /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011C; };
-		00000000000000000000001D /* HardwareRecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011D; };
-		00000000000000000000001E /* QuantConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011E; };
-		00000000000000000000001F /* QuantizeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011F; };
-		000000000000000000000020 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000120; };
-		000000000000000000000021 /* UploadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000121; };
-		000000000000000000000022 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000122; };
-		000000000000000000000023 /* TokenSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000123; };
-		000000000000000000000024 /* FilePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000124; };
-		000000000000000000000025 /* ModelDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000125; };
-		000000000000000000000026 /* ModelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000126; };
-		000000000000000000000027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000127; };
-		000000000000000000000028 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000128; };
+		BF0000000000000000000001 /* GGUFMyRepoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000001; };
+		BF0000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000002; };
+		BF0000000000000000000003 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000003; };
+		BF0000000000000000000004 /* GlassProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000004; };
+		BF0000000000000000000005 /* StorageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000005; };
+		BF0000000000000000000006 /* TerminalLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000006; };
+		BF0000000000000000000007 /* ThermalStateBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000007; };
+		BF0000000000000000000008 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000008; };
+		BF0000000000000000000009 /* DeviceProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000009; };
+		BF000000000000000000000A /* GGUFMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000A; };
+		BF000000000000000000000B /* HFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000B; };
+		BF000000000000000000000C /* QuantJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000C; };
+		BF000000000000000000000D /* QuantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000D; };
+		BF000000000000000000000E /* AppSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000E; };
+		BF000000000000000000000F /* BinaryQuantizeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000F; };
+		BF0000000000000000000010 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000010; };
+		BF0000000000000000000011 /* DeviceMemoryBridge.c in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000011; };
+		BF0000000000000000000012 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000012; };
+		BF0000000000000000000013 /* GGUFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000013; };
+		BF0000000000000000000014 /* HFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000014; };
+		BF0000000000000000000015 /* JobHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000015; };
+		BF0000000000000000000016 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000016; };
+		BF0000000000000000000017 /* QuantRecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000017; };
+		BF0000000000000000000018 /* QuantizeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000018; };
+		BF0000000000000000000019 /* ThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000019; };
+		BF000000000000000000001A /* WidgetSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001A; };
+		BF000000000000000000001B /* JobHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001B; };
+		BF000000000000000000001C /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001C; };
+		BF000000000000000000001D /* HardwareRecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001D; };
+		BF000000000000000000001E /* QuantConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001E; };
+		BF000000000000000000001F /* QuantizeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001F; };
+		BF0000000000000000000020 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000020; };
+		BF0000000000000000000021 /* UploadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000021; };
+		BF0000000000000000000022 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000022; };
+		BF0000000000000000000023 /* TokenSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000023; };
+		BF0000000000000000000024 /* FilePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000024; };
+		BF0000000000000000000025 /* ModelDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000025; };
+		BF0000000000000000000026 /* ModelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000026; };
+		BF0000000000000000000027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000027; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		000000000000000000000100 /* GGUFMyRepo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GGUFMyRepo; sourceTree = SOURCE_ROOT; };
-		000000000000000000000101 /* GGUFMyRepoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFMyRepoApp.swift; path = GGUFMyRepo/App/GGUFMyRepoApp.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000102 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootView.swift; path = GGUFMyRepo/App/RootView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000103 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfettiView.swift; path = GGUFMyRepo/Components/ConfettiView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000104 /* GlassProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlassProgressRing.swift; path = GGUFMyRepo/Components/GlassProgressRing.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000105 /* StorageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageBar.swift; path = GGUFMyRepo/Components/StorageBar.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000106 /* TerminalLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TerminalLogView.swift; path = GGUFMyRepo/Components/TerminalLogView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000107 /* ThermalStateBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThermalStateBadge.swift; path = GGUFMyRepo/Components/ThermalStateBadge.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000108 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = GGUFMyRepo/Models/AppSettings.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000109 /* DeviceProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceProfile.swift; path = GGUFMyRepo/Models/DeviceProfile.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010A /* GGUFMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFMetadata.swift; path = GGUFMyRepo/Models/GGUFMetadata.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010B /* HFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HFModel.swift; path = GGUFMyRepo/Models/HFModel.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010C /* QuantJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantJob.swift; path = GGUFMyRepo/Models/QuantJob.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010D /* QuantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantType.swift; path = GGUFMyRepo/Models/QuantType.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010E /* AppSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettingsStore.swift; path = GGUFMyRepo/Services/AppSettingsStore.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000010F /* BinaryQuantizeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BinaryQuantizeEngine.swift; path = GGUFMyRepo/Services/BinaryQuantizeEngine.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000110 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = GGUFMyRepo/Services/DeviceInfo.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000111 /* DeviceMemoryBridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = DeviceMemoryBridge.c; path = GGUFMyRepo/Services/DeviceMemoryBridge.c; sourceTree = SOURCE_ROOT; };
-		000000000000000000000112 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadManager.swift; path = GGUFMyRepo/Services/DownloadManager.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000113 /* GGUFParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFParser.swift; path = GGUFMyRepo/Services/GGUFParser.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000114 /* HFClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HFClient.swift; path = GGUFMyRepo/Services/HFClient.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000115 /* JobHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobHistoryStore.swift; path = GGUFMyRepo/Services/JobHistoryStore.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000116 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = GGUFMyRepo/Services/KeychainService.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000117 /* QuantRecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantRecommendationEngine.swift; path = GGUFMyRepo/Services/QuantRecommendationEngine.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000118 /* QuantizeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantizeEngine.swift; path = GGUFMyRepo/Services/QuantizeEngine.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000119 /* ThermalMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThermalMonitor.swift; path = GGUFMyRepo/Services/ThermalMonitor.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011A /* WidgetSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WidgetSyncService.swift; path = GGUFMyRepo/Services/WidgetSyncService.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011B /* JobHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobHistoryView.swift; path = GGUFMyRepo/Views/History/JobHistoryView.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011C /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadProgressView.swift; path = GGUFMyRepo/Views/Job/DownloadProgressView.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011D /* HardwareRecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HardwareRecommendationCard.swift; path = GGUFMyRepo/Views/Job/HardwareRecommendationCard.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011E /* QuantConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantConfigView.swift; path = GGUFMyRepo/Views/Job/QuantConfigView.swift; sourceTree = SOURCE_ROOT; };
-		00000000000000000000011F /* QuantizeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantizeProgressView.swift; path = GGUFMyRepo/Views/Job/QuantizeProgressView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000120 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultView.swift; path = GGUFMyRepo/Views/Job/ResultView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000121 /* UploadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadProgressView.swift; path = GGUFMyRepo/Views/Job/UploadProgressView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000122 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = GGUFMyRepo/Views/Onboarding/SplashView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000123 /* TokenSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokenSetupView.swift; path = GGUFMyRepo/Views/Onboarding/TokenSetupView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000124 /* FilePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilePickerSheet.swift; path = GGUFMyRepo/Views/Search/FilePickerSheet.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000125 /* ModelDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelDetailSheet.swift; path = GGUFMyRepo/Views/Search/ModelDetailSheet.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000126 /* ModelSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelSearchView.swift; path = GGUFMyRepo/Views/Search/ModelSearchView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000127 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = GGUFMyRepo/Views/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
-		000000000000000000000128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GGUFMyRepo/Info.plist; sourceTree = SOURCE_ROOT; };
-		000000000000000000000200 /* GGUFMyRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGUFMyRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR0000000000000000000001 /* GGUFMyRepoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFMyRepoApp.swift; path = GGUFMyRepo/App/GGUFMyRepoApp.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootView.swift; path = GGUFMyRepo/App/RootView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000003 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfettiView.swift; path = GGUFMyRepo/Components/ConfettiView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000004 /* GlassProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlassProgressRing.swift; path = GGUFMyRepo/Components/GlassProgressRing.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000005 /* StorageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageBar.swift; path = GGUFMyRepo/Components/StorageBar.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000006 /* TerminalLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TerminalLogView.swift; path = GGUFMyRepo/Components/TerminalLogView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000007 /* ThermalStateBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThermalStateBadge.swift; path = GGUFMyRepo/Components/ThermalStateBadge.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000008 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = GGUFMyRepo/Models/AppSettings.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000009 /* DeviceProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceProfile.swift; path = GGUFMyRepo/Models/DeviceProfile.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000A /* GGUFMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFMetadata.swift; path = GGUFMyRepo/Models/GGUFMetadata.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000B /* HFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HFModel.swift; path = GGUFMyRepo/Models/HFModel.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000C /* QuantJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantJob.swift; path = GGUFMyRepo/Models/QuantJob.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000D /* QuantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantType.swift; path = GGUFMyRepo/Models/QuantType.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000E /* AppSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettingsStore.swift; path = GGUFMyRepo/Services/AppSettingsStore.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000000F /* BinaryQuantizeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BinaryQuantizeEngine.swift; path = GGUFMyRepo/Services/BinaryQuantizeEngine.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000010 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = GGUFMyRepo/Services/DeviceInfo.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000011 /* DeviceMemoryBridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = DeviceMemoryBridge.c; path = GGUFMyRepo/Services/DeviceMemoryBridge.c; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000012 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadManager.swift; path = GGUFMyRepo/Services/DownloadManager.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000013 /* GGUFParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GGUFParser.swift; path = GGUFMyRepo/Services/GGUFParser.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000014 /* HFClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HFClient.swift; path = GGUFMyRepo/Services/HFClient.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000015 /* JobHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobHistoryStore.swift; path = GGUFMyRepo/Services/JobHistoryStore.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000016 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = GGUFMyRepo/Services/KeychainService.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000017 /* QuantRecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantRecommendationEngine.swift; path = GGUFMyRepo/Services/QuantRecommendationEngine.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000018 /* QuantizeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantizeEngine.swift; path = GGUFMyRepo/Services/QuantizeEngine.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000019 /* ThermalMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThermalMonitor.swift; path = GGUFMyRepo/Services/ThermalMonitor.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001A /* WidgetSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WidgetSyncService.swift; path = GGUFMyRepo/Services/WidgetSyncService.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001B /* JobHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobHistoryView.swift; path = GGUFMyRepo/Views/History/JobHistoryView.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001C /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadProgressView.swift; path = GGUFMyRepo/Views/Job/DownloadProgressView.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001D /* HardwareRecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HardwareRecommendationCard.swift; path = GGUFMyRepo/Views/Job/HardwareRecommendationCard.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001E /* QuantConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantConfigView.swift; path = GGUFMyRepo/Views/Job/QuantConfigView.swift; sourceTree = SOURCE_ROOT; };
+		FR000000000000000000001F /* QuantizeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuantizeProgressView.swift; path = GGUFMyRepo/Views/Job/QuantizeProgressView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000020 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultView.swift; path = GGUFMyRepo/Views/Job/ResultView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000021 /* UploadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadProgressView.swift; path = GGUFMyRepo/Views/Job/UploadProgressView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000022 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = GGUFMyRepo/Views/Onboarding/SplashView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000023 /* TokenSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokenSetupView.swift; path = GGUFMyRepo/Views/Onboarding/TokenSetupView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000024 /* FilePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilePickerSheet.swift; path = GGUFMyRepo/Views/Search/FilePickerSheet.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000025 /* ModelDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelDetailSheet.swift; path = GGUFMyRepo/Views/Search/ModelDetailSheet.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000026 /* ModelSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelSearchView.swift; path = GGUFMyRepo/Views/Search/ModelSearchView.swift; sourceTree = SOURCE_ROOT; };
+		FR0000000000000000000027 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = GGUFMyRepo/Views/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		PR0000000000000000000001 /* GGUFMyRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGUFMyRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		000000000000000000000300 /* Frameworks */ = {
+		FP0000000000000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,65 +102,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		000000000000000000000400 = {
+		GR0000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000100 /* GGUFMyRepo */,
-				000000000000000000000500 /* Products */,
+				GR0000000000000000000002 /* GGUFMyRepo */,
+				GR0000000000000000000003 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		000000000000000000000500 /* Products */ = {
+		GR0000000000000000000003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000200 /* GGUFMyRepo.app */,
+				PR0000000000000000000001 /* GGUFMyRepo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		000000000000000000000100 /* GGUFMyRepo */ = {
+		GR0000000000000000000002 /* GGUFMyRepo */ = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000101 /* GGUFMyRepoApp.swift */,
-				000000000000000000000102 /* RootView.swift */,
-				000000000000000000000103 /* ConfettiView.swift */,
-				000000000000000000000104 /* GlassProgressRing.swift */,
-				000000000000000000000105 /* StorageBar.swift */,
-				000000000000000000000106 /* TerminalLogView.swift */,
-				000000000000000000000107 /* ThermalStateBadge.swift */,
-				000000000000000000000108 /* AppSettings.swift */,
-				000000000000000000000109 /* DeviceProfile.swift */,
-				00000000000000000000010A /* GGUFMetadata.swift */,
-				00000000000000000000010B /* HFModel.swift */,
-				00000000000000000000010C /* QuantJob.swift */,
-				00000000000000000000010D /* QuantType.swift */,
-				00000000000000000000010E /* AppSettingsStore.swift */,
-				00000000000000000000010F /* BinaryQuantizeEngine.swift */,
-				000000000000000000000110 /* DeviceInfo.swift */,
-				000000000000000000000111 /* DeviceMemoryBridge.c */,
-				000000000000000000000112 /* DownloadManager.swift */,
-				000000000000000000000113 /* GGUFParser.swift */,
-				000000000000000000000114 /* HFClient.swift */,
-				000000000000000000000115 /* JobHistoryStore.swift */,
-				000000000000000000000116 /* KeychainService.swift */,
-				000000000000000000000117 /* QuantRecommendationEngine.swift */,
-				000000000000000000000118 /* QuantizeEngine.swift */,
-				000000000000000000000119 /* ThermalMonitor.swift */,
-				00000000000000000000011A /* WidgetSyncService.swift */,
-				00000000000000000000011B /* JobHistoryView.swift */,
-				00000000000000000000011C /* DownloadProgressView.swift */,
-				00000000000000000000011D /* HardwareRecommendationCard.swift */,
-				00000000000000000000011E /* QuantConfigView.swift */,
-				00000000000000000000011F /* QuantizeProgressView.swift */,
-				000000000000000000000120 /* ResultView.swift */,
-				000000000000000000000121 /* UploadProgressView.swift */,
-				000000000000000000000122 /* SplashView.swift */,
-				000000000000000000000123 /* TokenSetupView.swift */,
-				000000000000000000000124 /* FilePickerSheet.swift */,
-				000000000000000000000125 /* ModelDetailSheet.swift */,
-				000000000000000000000126 /* ModelSearchView.swift */,
-				000000000000000000000127 /* SettingsView.swift */,
-				000000000000000000000128 /* Info.plist */,
+				FR0000000000000000000001 /* GGUFMyRepoApp.swift */,
+				FR0000000000000000000002 /* RootView.swift */,
+				FR0000000000000000000003 /* ConfettiView.swift */,
+				FR0000000000000000000004 /* GlassProgressRing.swift */,
+				FR0000000000000000000005 /* StorageBar.swift */,
+				FR0000000000000000000006 /* TerminalLogView.swift */,
+				FR0000000000000000000007 /* ThermalStateBadge.swift */,
+				FR0000000000000000000008 /* AppSettings.swift */,
+				FR0000000000000000000009 /* DeviceProfile.swift */,
+				FR000000000000000000000A /* GGUFMetadata.swift */,
+				FR000000000000000000000B /* HFModel.swift */,
+				FR000000000000000000000C /* QuantJob.swift */,
+				FR000000000000000000000D /* QuantType.swift */,
+				FR000000000000000000000E /* AppSettingsStore.swift */,
+				FR000000000000000000000F /* BinaryQuantizeEngine.swift */,
+				FR0000000000000000000010 /* DeviceInfo.swift */,
+				FR0000000000000000000011 /* DeviceMemoryBridge.c */,
+				FR0000000000000000000012 /* DownloadManager.swift */,
+				FR0000000000000000000013 /* GGUFParser.swift */,
+				FR0000000000000000000014 /* HFClient.swift */,
+				FR0000000000000000000015 /* JobHistoryStore.swift */,
+				FR0000000000000000000016 /* KeychainService.swift */,
+				FR0000000000000000000017 /* QuantRecommendationEngine.swift */,
+				FR0000000000000000000018 /* QuantizeEngine.swift */,
+				FR0000000000000000000019 /* ThermalMonitor.swift */,
+				FR000000000000000000001A /* WidgetSyncService.swift */,
+				FR000000000000000000001B /* JobHistoryView.swift */,
+				FR000000000000000000001C /* DownloadProgressView.swift */,
+				FR000000000000000000001D /* HardwareRecommendationCard.swift */,
+				FR000000000000000000001E /* QuantConfigView.swift */,
+				FR000000000000000000001F /* QuantizeProgressView.swift */,
+				FR0000000000000000000020 /* ResultView.swift */,
+				FR0000000000000000000021 /* UploadProgressView.swift */,
+				FR0000000000000000000022 /* SplashView.swift */,
+				FR0000000000000000000023 /* TokenSetupView.swift */,
+				FR0000000000000000000024 /* FilePickerSheet.swift */,
+				FR0000000000000000000025 /* ModelDetailSheet.swift */,
+				FR0000000000000000000026 /* ModelSearchView.swift */,
+				FR0000000000000000000027 /* SettingsView.swift */,
 			);
 			name = GGUFMyRepo;
 			sourceTree = SOURCE_ROOT;
@@ -171,13 +167,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		000000000000000000000600 /* GGUFMyRepo */ = {
+		NT0000000000000000000001 /* GGUFMyRepo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 000000000000000000000700 /* Build configuration list for PBXNativeTarget "GGUFMyRepo" */;
+			buildConfigurationList = CL0000000000000000000001 /* Build configuration list for PBXNativeTarget "GGUFMyRepo" */;
 			buildPhases = (
-				000000000000000000000800 /* Sources */,
-				000000000000000000000300 /* Frameworks */,
-				000000000000000000000900 /* Resources */,
+				SP0000000000000000000001 /* Sources */,
+				FP0000000000000000000001 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,15 +180,15 @@
 			);
 			name = GGUFMyRepo;
 			productName = GGUFMyRepo;
-			productReference = 000000000000000000000200 /* GGUFMyRepo.app */;
+			productReference = PR0000000000000000000001 /* GGUFMyRepo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		000000000000000000000A00 /* Project object */ = {
+		PJ0000000000000000000001 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 000000000000000000000B00 /* Build configuration list for PBXProject "GGUFMyRepo" */;
+			buildConfigurationList = CL0000000000000000000002 /* Build configuration list for PBXProject "GGUFMyRepo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,91 +196,77 @@
 				en,
 				Base,
 			);
-			mainGroup = 000000000000000000000400;
-			productRefGroup = 000000000000000000000500 /* Products */;
+			mainGroup = GR0000000000000000000001;
+			productRefGroup = GR0000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				000000000000000000000600 /* GGUFMyRepo */,
+				NT0000000000000000000001 /* GGUFMyRepo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		000000000000000000000900 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				000000000000000000000028 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		000000000000000000000800 /* Sources */ = {
+		SP0000000000000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000000000000000000000001 /* GGUFMyRepoApp.swift in Sources */,
-				000000000000000000000002 /* RootView.swift in Sources */,
-				000000000000000000000003 /* ConfettiView.swift in Sources */,
-				000000000000000000000004 /* GlassProgressRing.swift in Sources */,
-				000000000000000000000005 /* StorageBar.swift in Sources */,
-				000000000000000000000006 /* TerminalLogView.swift in Sources */,
-				000000000000000000000007 /* ThermalStateBadge.swift in Sources */,
-				000000000000000000000008 /* AppSettings.swift in Sources */,
-				000000000000000000000009 /* DeviceProfile.swift in Sources */,
-				00000000000000000000000A /* GGUFMetadata.swift in Sources */,
-				00000000000000000000000B /* HFModel.swift in Sources */,
-				00000000000000000000000C /* QuantJob.swift in Sources */,
-				00000000000000000000000D /* QuantType.swift in Sources */,
-				00000000000000000000000E /* AppSettingsStore.swift in Sources */,
-				00000000000000000000000F /* BinaryQuantizeEngine.swift in Sources */,
-				000000000000000000000010 /* DeviceInfo.swift in Sources */,
-				000000000000000000000011 /* DeviceMemoryBridge.c in Sources */,
-				000000000000000000000012 /* DownloadManager.swift in Sources */,
-				000000000000000000000013 /* GGUFParser.swift in Sources */,
-				000000000000000000000014 /* HFClient.swift in Sources */,
-				000000000000000000000015 /* JobHistoryStore.swift in Sources */,
-				000000000000000000000016 /* KeychainService.swift in Sources */,
-				000000000000000000000017 /* QuantRecommendationEngine.swift in Sources */,
-				000000000000000000000018 /* QuantizeEngine.swift in Sources */,
-				000000000000000000000019 /* ThermalMonitor.swift in Sources */,
-				00000000000000000000001A /* WidgetSyncService.swift in Sources */,
-				00000000000000000000001B /* JobHistoryView.swift in Sources */,
-				00000000000000000000001C /* DownloadProgressView.swift in Sources */,
-				00000000000000000000001D /* HardwareRecommendationCard.swift in Sources */,
-				00000000000000000000001E /* QuantConfigView.swift in Sources */,
-				00000000000000000000001F /* QuantizeProgressView.swift in Sources */,
-				000000000000000000000020 /* ResultView.swift in Sources */,
-				000000000000000000000021 /* UploadProgressView.swift in Sources */,
-				000000000000000000000022 /* SplashView.swift in Sources */,
-				000000000000000000000023 /* TokenSetupView.swift in Sources */,
-				000000000000000000000024 /* FilePickerSheet.swift in Sources */,
-				000000000000000000000025 /* ModelDetailSheet.swift in Sources */,
-				000000000000000000000026 /* ModelSearchView.swift in Sources */,
-				000000000000000000000027 /* SettingsView.swift in Sources */,
+				BF0000000000000000000001 /* GGUFMyRepoApp.swift in Sources */,
+				BF0000000000000000000002 /* RootView.swift in Sources */,
+				BF0000000000000000000003 /* ConfettiView.swift in Sources */,
+				BF0000000000000000000004 /* GlassProgressRing.swift in Sources */,
+				BF0000000000000000000005 /* StorageBar.swift in Sources */,
+				BF0000000000000000000006 /* TerminalLogView.swift in Sources */,
+				BF0000000000000000000007 /* ThermalStateBadge.swift in Sources */,
+				BF0000000000000000000008 /* AppSettings.swift in Sources */,
+				BF0000000000000000000009 /* DeviceProfile.swift in Sources */,
+				BF000000000000000000000A /* GGUFMetadata.swift in Sources */,
+				BF000000000000000000000B /* HFModel.swift in Sources */,
+				BF000000000000000000000C /* QuantJob.swift in Sources */,
+				BF000000000000000000000D /* QuantType.swift in Sources */,
+				BF000000000000000000000E /* AppSettingsStore.swift in Sources */,
+				BF000000000000000000000F /* BinaryQuantizeEngine.swift in Sources */,
+				BF0000000000000000000010 /* DeviceInfo.swift in Sources */,
+				BF0000000000000000000011 /* DeviceMemoryBridge.c in Sources */,
+				BF0000000000000000000012 /* DownloadManager.swift in Sources */,
+				BF0000000000000000000013 /* GGUFParser.swift in Sources */,
+				BF0000000000000000000014 /* HFClient.swift in Sources */,
+				BF0000000000000000000015 /* JobHistoryStore.swift in Sources */,
+				BF0000000000000000000016 /* KeychainService.swift in Sources */,
+				BF0000000000000000000017 /* QuantRecommendationEngine.swift in Sources */,
+				BF0000000000000000000018 /* QuantizeEngine.swift in Sources */,
+				BF0000000000000000000019 /* ThermalMonitor.swift in Sources */,
+				BF000000000000000000001A /* WidgetSyncService.swift in Sources */,
+				BF000000000000000000001B /* JobHistoryView.swift in Sources */,
+				BF000000000000000000001C /* DownloadProgressView.swift in Sources */,
+				BF000000000000000000001D /* HardwareRecommendationCard.swift in Sources */,
+				BF000000000000000000001E /* QuantConfigView.swift in Sources */,
+				BF000000000000000000001F /* QuantizeProgressView.swift in Sources */,
+				BF0000000000000000000020 /* ResultView.swift in Sources */,
+				BF0000000000000000000021 /* UploadProgressView.swift in Sources */,
+				BF0000000000000000000022 /* SplashView.swift in Sources */,
+				BF0000000000000000000023 /* TokenSetupView.swift in Sources */,
+				BF0000000000000000000024 /* FilePickerSheet.swift in Sources */,
+				BF0000000000000000000025 /* ModelDetailSheet.swift in Sources */,
+				BF0000000000000000000026 /* ModelSearchView.swift in Sources */,
+				BF0000000000000000000027 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		000000000000000000000C00 /* Debug */ = {
+		BC0000000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -304,12 +285,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -318,16 +297,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -335,20 +306,17 @@
 			};
 			name = Debug;
 		};
-		000000000000000000000D00 /* Release */ = {
+		BC0000000000000000000002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -367,31 +335,21 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		000000000000000000000E00 /* Debug */ = {
+		BC0000000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -424,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		000000000000000000000F00 /* Release */ = {
+		BC0000000000000000000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,25 +418,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		000000000000000000000700 /* Build configuration list for PBXNativeTarget "GGUFMyRepo" */ = {
+		CL0000000000000000000001 /* Build configuration list for PBXNativeTarget "GGUFMyRepo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000000000E00 /* Debug */,
-				000000000000000000000F00 /* Release */,
+				BC0000000000000000000003 /* Debug */,
+				BC0000000000000000000004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		000000000000000000000B00 /* Build configuration list for PBXProject "GGUFMyRepo" */ = {
+		CL0000000000000000000002 /* Build configuration list for PBXProject "GGUFMyRepo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000000000C00 /* Debug */,
-				000000000000000000000D00 /* Release */,
+				BC0000000000000000000001 /* Debug */,
+				BC0000000000000000000002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 000000000000000000000A00 /* Project object */;
+	rootObject = PJ0000000000000000000001 /* Project object */;
 }
