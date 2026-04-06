@@ -41,10 +41,11 @@ jobs:
           echo "BUILD_NUMBER=$BUILD" >> $GITHUB_ENV
           echo "BUILD_NUMBER = $BUILD" > GGUFMyRepo/generated-build-number.xcconfig
       - name: Resolve packages
-        run: xcodebuild -resolvePackageDependencies -scheme GGUFMyRepo
+        run: xcodebuild -project GGUFMyRepo.xcodeproj -resolvePackageDependencies -scheme GGUFMyRepo
       - name: Build archive
         run: |
           xcodebuild archive \
+            -project GGUFMyRepo.xcodeproj \
             -scheme GGUFMyRepo \
             -configuration Release \
             -destination 'generic/platform=iOS' \
