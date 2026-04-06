@@ -47,3 +47,8 @@ It reads active job fields from the shared app group defaults (`group.com.ggufmy
 - Resumable background download manager with persisted resume-data snapshot.
 - Thermal monitor service that polls every 2 seconds for quantization screens.
 - Quantization progress UI now displays ETA and throughput in locale-friendly units.
+
+
+## Test scaffolding
+
+Added `GGUFMyRepoTests` with initial parser and recommendation tests; wire this target into `GGUFMyRepo.xcodeproj` once the project file is created.
