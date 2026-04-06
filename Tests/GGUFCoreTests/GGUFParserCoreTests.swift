@@ -9,6 +9,19 @@ final class GGUFParserCoreTests: XCTestCase {
         XCTAssertThrowsError(try GGUFParser().parseHeader(at: url))
     }
 
+
+    func testUnsupportedVersionThrows() throws {
+        let url = FileManager.default.temporaryDirectory.appending(path: "bad-version.gguf")
+        var data = Data()
+        append(UInt32(0x46554747), to: &data)
+        append(UInt32(2), to: &data)
+        append(UInt64(0), to: &data)
+        append(UInt64(0), to: &data)
+        try data.write(to: url)
+
+        XCTAssertThrowsError(try GGUFParser().parseHeader(at: url))
+    }
+
     func testParsesCoreMetadataKeys() throws {
         let url = FileManager.default.temporaryDirectory.appending(path: "metadata.gguf")
         try makeSampleGGUF().write(to: url)

@@ -70,3 +70,8 @@ swift test
 ## CI updates
 
 CI now runs `swift test` in a dedicated `core-tests` job before the unsigned IPA packaging job.
+
+
+## Sideload-only engine option (not App Store safe)
+
+`GGUFMyRepo/Services/BinaryQuantizeEngine.swift` adds a sideload-oriented path that launches a bundled `llama-quantize` executable with `posix_spawn`, streams stdout/stderr, and parses `%` progress from log lines.
