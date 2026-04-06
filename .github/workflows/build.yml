@@ -1,0 +1,80 @@
+name: Build Unsigned IPA
+on: [push, workflow_dispatch]
+
+jobs:
+  core-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "5.10"
+      - name: Run core tests
+        run: swift test
+
+  build:
+    runs-on: macos-15
+    needs: core-tests
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect Xcode project
+        id: detect
+        run: |
+          if [ -d "GGUFMyRepo.xcodeproj" ]; then
+            echo "has_project=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_project=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Select Xcode
+        if: steps.detect.outputs.has_project == 'true'
+        run: sudo xcode-select -s /Applications/Xcode_16.app
+
+      - name: Download iOS platform
+        if: steps.detect.outputs.has_project == 'true'
+        run: xcodebuild -downloadPlatform iOS
+
+      - name: Generate build number
+        run: |
+          BUILD=$(git rev-list --count HEAD)
+          echo "BUILD_NUMBER=$BUILD" >> $GITHUB_ENV
+          echo "BUILD_NUMBER = $BUILD" > generated-build-number.xcconfig
+
+      - name: Resolve packages
+        if: steps.detect.outputs.has_project == 'true'
+        run: xcodebuild -resolvePackageDependencies -scheme GGUFMyRepo
+
+      - name: Build archive
+        if: steps.detect.outputs.has_project == 'true'
+        run: |
+          xcodebuild archive \
+            -scheme GGUFMyRepo \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/GGUFMyRepo.xcarchive \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Package IPA (Xcode archive)
+        if: steps.detect.outputs.has_project == 'true'
+        run: |
+          mkdir -p Payload
+          cp -r build/GGUFMyRepo.xcarchive/Products/Applications/GGUFMyRepo.app Payload/
+          zip -r GGUFMyRepo.ipa Payload/
+
+      - name: Package IPA (scaffold fallback)
+        if: steps.detect.outputs.has_project != 'true'
+        run: |
+          mkdir -p Payload/GGUFMyRepo.app
+          cp README.md Payload/GGUFMyRepo.app/README.txt
+          /usr/bin/zip -r GGUFMyRepo.ipa Payload/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GGUFMyRepo-unsigned-${{ env.BUILD_NUMBER }}
+          path: GGUFMyRepo.ipa
