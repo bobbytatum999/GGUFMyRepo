@@ -3,7 +3,7 @@ import XCTest
 
 final class GGUFParserCoreTests: XCTestCase {
     func testInvalidMagicThrows() throws {
-        let url = FileManager.default.temporaryDirectory.appending(path: "bad-magic.gguf")
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("bad-magic.gguf")
         try Data([0, 1, 2, 3, 4, 5, 6, 7]).write(to: url)
 
         XCTAssertThrowsError(try GGUFParser().parseHeader(at: url))
@@ -11,7 +11,7 @@ final class GGUFParserCoreTests: XCTestCase {
 
 
     func testUnsupportedVersionThrows() throws {
-        let url = FileManager.default.temporaryDirectory.appending(path: "bad-version.gguf")
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("bad-version.gguf")
         var data = Data()
         append(UInt32(0x46554747), to: &data)
         append(UInt32(2), to: &data)
@@ -23,7 +23,7 @@ final class GGUFParserCoreTests: XCTestCase {
     }
 
     func testParsesCoreMetadataKeys() throws {
-        let url = FileManager.default.temporaryDirectory.appending(path: "metadata.gguf")
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("metadata.gguf")
         try makeSampleGGUF().write(to: url)
 
         let parsed = try GGUFParser().parseHeader(at: url)
