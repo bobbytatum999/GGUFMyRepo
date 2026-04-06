@@ -80,3 +80,8 @@ CI now runs `swift test` in a dedicated `core-tests` job before the unsigned IPA
 ## Feature backlog
 
 See `IOS_FEATURE_BACKLOG.md` for iOS-capable features/settings tailored to this app.
+
+
+## Settings persistence
+
+`AppSettingsStore` now persists `AppSettings` to `UserDefaults` and `SettingsView` is wired to live-edit those values.
