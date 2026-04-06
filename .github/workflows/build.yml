@@ -20,7 +20,21 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode_16.app
       - name: Download iOS platform
-        run: xcodebuild -downloadPlatform iOS
+        run: |
+          # Retry logic for simulator connection issues
+          for i in 1 2 3; do
+            echo "Attempt $i to download iOS platform..."
+            if xcodebuild -downloadPlatform iOS; then
+              echo "Successfully downloaded iOS platform"
+              exit 0
+            fi
+            echo "Attempt $i failed, waiting before retry..."
+            sleep 10
+          done
+          echo "Failed to download iOS platform after 3 attempts, but continuing..."
+          # Don't fail the build if platform download fails - it might already be installed
+          exit 0
+        continue-on-error: true
       - name: Generate build number
         run: |
           BUILD=$(git rev-list --count HEAD)
