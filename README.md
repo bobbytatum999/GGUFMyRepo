@@ -40,3 +40,10 @@ This repository now includes a stronger base implementation:
 
 A starter widget target source is included at `GGUFMyRepoWidget/GGUFMyRepoWidget.swift`.
 It reads active job fields from the shared app group defaults (`group.com.ggufmyrepo.shared`) and displays phase + progress.
+
+
+## Recent upgrades
+
+- Resumable background download manager with persisted resume-data snapshot.
+- Thermal monitor service that polls every 2 seconds for quantization screens.
+- Quantization progress UI now displays ETA and throughput in locale-friendly units.
