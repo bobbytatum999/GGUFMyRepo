@@ -85,3 +85,8 @@ See `IOS_FEATURE_BACKLOG.md` for iOS-capable features/settings tailored to this 
 ## Settings persistence
 
 `AppSettingsStore` now persists `AppSettings` to `UserDefaults` and `SettingsView` is wired to live-edit those values.
+
+
+## Merge-safety check
+
+Run `./scripts/check_conflicts.sh` to verify merge-sensitive files contain no conflict markers before pushing.

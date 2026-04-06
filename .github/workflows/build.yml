@@ -10,6 +10,9 @@ jobs:
         uses: swift-actions/setup-swift@v2
         with:
           swift-version: "5.10"
+      - name: Check merge markers
+        run: ./scripts/check_conflicts.sh
+
       - name: Run core tests
         run: swift test
 
