@@ -58,11 +58,11 @@ actor BinaryQuantizeEngine {
         }
 
         var fileActions = posix_spawn_file_actions_t()
-        posix_spawn_file_actions_init(&fileActions)
-        defer { posix_spawn_file_actions_destroy(&fileActions) }
+        _ = posix_spawn_file_actions_init(&fileActions)
+        defer { _ = posix_spawn_file_actions_destroy(&fileActions) }
 
-        posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDOUT_FILENO)
-        posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDERR_FILENO)
+        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDOUT_FILENO)
+        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDERR_FILENO)
 
         let args = [
             binaryURL.path(),
