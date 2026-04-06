@@ -1,8 +1,20 @@
 name: Build Unsigned IPA
 on: [push, workflow_dispatch]
 jobs:
+  core-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "5.10"
+      - name: Run core tests
+        run: swift test
+
   build:
     runs-on: macos-15
+    needs: core-tests
     steps:
       - uses: actions/checkout@v4
       - name: Select Xcode

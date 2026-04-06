@@ -65,3 +65,8 @@ Run:
 ```bash
 swift test
 ```
+
+
+## CI updates
+
+CI now runs `swift test` in a dedicated `core-tests` job before the unsigned IPA packaging job.
