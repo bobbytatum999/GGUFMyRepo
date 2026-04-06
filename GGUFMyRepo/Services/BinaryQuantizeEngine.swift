@@ -26,7 +26,7 @@ actor BinaryQuantizeEngine {
         AsyncThrowingStream { continuation in
             Task.detached(priority: .userInitiated) {
                 do {
-                    try self.run(binaryURL: binaryURL, inputURL: inputURL, outputURL: outputURL, quantType: quantType, threads: threads, continuation: continuation)
+                    try await self.run(binaryURL: binaryURL, inputURL: inputURL, outputURL: outputURL, quantType: quantType, threads: threads, continuation: continuation)
                     continuation.finish()
                 } catch {
                     continuation.finish(throwing: error)
@@ -42,7 +42,7 @@ actor BinaryQuantizeEngine {
         quantType: QuantType,
         threads: Int,
         continuation: AsyncThrowingStream<OutputEvent, Error>.Continuation
-    ) throws {
+    ) async throws {
         guard FileManager.default.fileExists(atPath: binaryURL.path()) else {
             throw EngineError.binaryMissing
         }
@@ -72,15 +72,15 @@ actor BinaryQuantizeEngine {
             quantType.rawValue
         ]
 
-        let cArgs: [UnsafeMutablePointer<CChar>?] = args.map { strdup($0) } + [nil]
+        let cArgs = args.map { strdup($0) } + [nil]
         defer { cArgs.forEach { free($0) } }
 
         var pid: pid_t = 0
-        let status = posix_spawn(&pid, binaryURL.path(), &fileActions, nil, UnsafeMutablePointer(mutating: cArgs), environ)
+        let status = posix_spawn(&pid, binaryURL.path(), &fileActions, nil, cArgs, environ)
         guard status == 0 else { throw EngineError.spawnFailed(status) }
 
         close(pipefds[1])
-        try streamOutput(readFD: pipefds[0], continuation: continuation)
+        try await streamOutput(readFD: pipefds[0], continuation: continuation)
 
         var exitStatus: Int32 = 0
         guard waitpid(pid, &exitStatus, 0) >= 0 else { throw EngineError.waitFailed }
@@ -90,7 +90,7 @@ actor BinaryQuantizeEngine {
         }
     }
 
-    private func streamOutput(readFD: Int32, continuation: AsyncThrowingStream<OutputEvent, Error>.Continuation) throws {
+    private func streamOutput(readFD: Int32, continuation: AsyncThrowingStream<OutputEvent, Error>.Continuation) async throws {
         var buffer = [UInt8](repeating: 0, count: 4096)
         var carry = Data()
 
