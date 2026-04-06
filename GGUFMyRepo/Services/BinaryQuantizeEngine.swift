@@ -84,7 +84,8 @@ actor BinaryQuantizeEngine {
 
         var exitStatus: Int32 = 0
         guard waitpid(pid, &exitStatus, 0) >= 0 else { throw EngineError.waitFailed }
-        guard WIFEXITED(exitStatus) && WEXITSTATUS(exitStatus) == 0 else {
+        // WIFEXITED(x) = ((x) & 0x7F == 0), WEXITSTATUS(x) = (((x) >> 8) & 0xFF)
+        guard (exitStatus & 0x7F == 0) && (((exitStatus >> 8) & 0xFF) == 0) else {
             throw EngineError.nonZeroExit(exitStatus)
         }
     }
