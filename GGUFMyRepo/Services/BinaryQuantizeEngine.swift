@@ -58,11 +58,8 @@ actor BinaryQuantizeEngine {
         }
 
         var fileActions = posix_spawn_file_actions_t()
-        _ = posix_spawn_file_actions_init(&fileActions)
-        defer { _ = posix_spawn_file_actions_destroy(&fileActions) }
-
-        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDOUT_FILENO)
-        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDERR_FILENO)
+        let initResult = posix_spawn_file_actions_init(&fileActions)
+        guard initResult == 0 else { throw EngineError.spawnFailed(initResult) }
 
         let args = [
             binaryURL.path(),
@@ -73,7 +70,13 @@ actor BinaryQuantizeEngine {
         ]
 
         let cArgs = args.map { strdup($0) } + [nil]
-        defer { cArgs.forEach { free($0) } }
+        defer { 
+            cArgs.forEach { free($0) }
+            posix_spawn_file_actions_destroy(&fileActions)
+        }
+
+        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDOUT_FILENO)
+        _ = posix_spawn_file_actions_adddup2(&fileActions, pipefds[1], STDERR_FILENO)
 
         var pid: pid_t = 0
         let status = posix_spawn(&pid, binaryURL.path(), &fileActions, nil, cArgs, environ)
