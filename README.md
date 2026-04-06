@@ -52,3 +52,16 @@ It reads active job fields from the shared app group defaults (`group.com.ggufmy
 ## Test scaffolding
 
 Added `GGUFMyRepoTests` with initial parser and recommendation tests; wire this target into `GGUFMyRepo.xcodeproj` once the project file is created.
+
+
+## Core package (testable today)
+
+A standalone Swift Package is included for deterministic core logic testing:
+- `Sources/GGUFCore` (recommendation + GGUF header parser core)
+- `Tests/GGUFCoreTests`
+
+Run:
+
+```bash
+swift test
+```
