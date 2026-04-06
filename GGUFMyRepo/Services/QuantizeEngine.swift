@@ -24,10 +24,10 @@ actor QuantizeEngine {
             let progressBox = QuantizeProgressBox(continuation: continuation)
             let unmanaged = Unmanaged.passRetained(progressBox)
 
-            Task.detached(priority: .userInitiated) {
+            Task.detached(priority: .userInitiated) { [self] in
                 defer { unmanaged.release() }
                 do {
-                    try await runQuantization(input: input, output: output, type: type, threads: threads, context: unmanaged.toOpaque())
+                    try await self.runQuantization(input: input, output: output, type: type, threads: threads, context: unmanaged.toOpaque())
                     continuation.finish()
                 } catch {
                     continuation.finish(throwing: error)
